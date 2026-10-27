@@ -1,7 +1,7 @@
 # Relatório Técnico - 29º Troféu Alexandre Pussieldi 2025
 **Disciplina:** Banco de Dados / Modelagem  
 **Objetivo:** Estruturação relacional e consultas estatísticas para o sistema FASE Aquática.
-**Discentes:** Layla Geovanna Menezes, Luiz Felipe Menezes, Patrick Felipe Monteiro, Rayssa Veloso 
+**Discentes:** Layla Geovanna Menezes, Luiz Felipe Menezes, Patrick Felipe Monteiro, Rayssa Veloso.
 
 ---
 
