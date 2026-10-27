@@ -12,7 +12,7 @@ A arquitetura adota a separação de cadastros básicos, fluxo de inscrições (
 
 ### Diagrama Entidade-Relacionamento (ER)
 
-![Diagrama ER](main/diagrama_er.png)
+![Diagrama ER](/diagrama_er.png)
 *(Renderização do modelo relacional)*
 
 ```mermaid
@@ -114,12 +114,12 @@ Durante a fase de desenvolvimento das consultas estatísticas (`sp_quatro_de_mig
 
 A IA pressupôs erroneamente a existência de uma coluna estática `idade` na tabela de atletas e aplicou faixas etárias inexistentes no regulamento (ex: inserindo 12 a 13 anos para a categoria Mirim).
 
-![Geração Inicial da IA](main/prompt_ia_alucinacao.png)
+![Geração Inicial da IA](/prompt_ia_alucinacao.png)
 *(Figura 1: Geração inicial da IA com regra de negócio incorreta e uso de campo derivado estático)*
 
 Para corrigir essa inconsistência, foi aplicado um *prompt* corretivo de engenharia reversa. O modelo foi instruído a respeitar as categorias oficiais da FASE Aquática (Pré-Mirim: até 9 anos; Mirim: 10 a 11 anos) e a substituir a referência estática por um cálculo dinâmico baseado no `ano_nascimento`.
 
-![Correção Técnica](main/prompt_ia_correcao.png)
+![Correção Técnica](/prompt_ia_correcao.png)
 *(Figura 2: Intervenção técnica e atualização do código SQL para validação matemática de datas)*
 
 ### 2.1. Scripts Finais e Ordenação de Dados
